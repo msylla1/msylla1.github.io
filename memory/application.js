@@ -3,7 +3,7 @@ $('card').ready(function(){
     $('#card_holder').append('<div class="card"><p>'+i+'</p></div>');
   };
 	$('card').click(function(){
-		$(this). find("p").css("opacity;1")
+		$(this). find("p").css("opacity;1") 
   
 	});
   });
