@@ -24,6 +24,7 @@ var new_array = shuffle(my_array);
     $('#card_holder').append('<div class="card"><p>'+my_array[i]+'</p></div>');
   };
 	$('.card').click(function(){
+	 if(first_click==second_click)
 		$(this).find("p").css("opacity", 1);
 		$(this).html();
   
