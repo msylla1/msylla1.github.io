@@ -1,29 +1,32 @@
 $(document).ready(function(){
-	var my_array = ["1","1","2","2","3","3","4","4","5","5","6","6","7","7","8","8","9","9","10","10"];
+  var my_array = ["1","1","2","2","3","3","4","4","5","5","6","6","7","7","8","8","9","9","10","10"];
+  function shuffle(array) {
+    var counter = array.length, temp, index;
 
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex ;
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        index = Math.floor(Math.random() * counter);
 
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
+        // Decrease counter by 1
+        counter--;
 
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+        // And swap the last element with it
+        temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
 
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
+    return array;
 }
-var new_array = shuffle(my_array);	
-  for(i in new_array){
+  var new_array=shuffle(my_array);
+  var first_click = "a";
+  var second_click = "a";
+  var click_count = 0;
+  for(i in my_array){
     $('#card_holder').append('<div class="card"><p>'+my_array[i]+'</p></div>');
-  };
-$('.card').click(function(){
+  }
+  $('.card').click(function(){
     if(click_count == 0){
     $(this).find('p').css("opacity", 1);
     $(this).find('p').addClass('clicked');
