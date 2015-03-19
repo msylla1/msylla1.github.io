@@ -5,5 +5,16 @@
   </head>
   <body>
     <header>
-      <img src="
+      <h1>Fruits</h1>
+        <p>Apples</p>
+        <p>Oranges</p>
+        <p>Watermelons</p>
+        <p>Strawberries</p>
+      <h2>Cereal</h2>
+        <p>Fruity Pebbles</p>
+        <p>Frosted Flakes</p>
+        <p>Corn FLakes</p>
+        <p>Cinnamon Toast Crunch</p>
+        
+        
   
