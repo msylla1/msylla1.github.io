@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  //find a way for the program to choose a random number between 1 and 100, save this as a variable
+  var(num)
   
   
   //when the player clicks on the 'guess' button
