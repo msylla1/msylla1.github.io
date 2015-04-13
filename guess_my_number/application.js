@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var(num)
+  var my_array= {1-100}
   
   
   //when the player clicks on the 'guess' button
