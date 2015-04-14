@@ -5,17 +5,17 @@ $(document).ready(function(){
   //when the player clicks on the 'guess' button
   $('button').on('click', function(){
     var guess = $('input').val();
-    if (number = guess)
+    if (number === guess)
      {
       console.log("Excellent Job!")
      }
-    else
+    else if (number < guess)
      {
-      console.log("Guess Higher")
+      console.log("Guess Lower")
      }
-    if (number < guess)
+    else
     {
-      console.log("Guess Lower") 
+      console.log("Guess Higher") 
     }
   });
 });
