@@ -7,15 +7,15 @@ $(document).ready(function(){
     var guess = $('input').val();
     if (number === guess)
      {
-      console.log("Excellent Job!")
+      alert("Excellent Job!")
      }
     else if (number < guess)
      {
-      console.log("Guess Lower")
+      alert("Guess Lower")
      }
     else
     {
-      console.log("Guess Higher") 
+      alert("Guess Higher") 
     }
   });
 });
