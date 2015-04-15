@@ -4,14 +4,14 @@ $(document).ready(function(){
   
   //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-    var guess = $('input').val();
+    var guess = $('input').val(); //This determines whether the guess is the same or if it is higher or lower.
     if (number === guess)
      {
       alert("Excellent Job!")
      }
     else if (number < guess)
      {
-      alert("Guess Lower")
+      alert("Guess Lower")//This tells the user to find a guess that is higher.
      }
     else
     {
