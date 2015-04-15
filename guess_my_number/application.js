@@ -4,7 +4,7 @@ $(document).ready(function(){
   
   //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-    var guess = $('input').val(); //This determines whether the guess is the same or if it is higher or lower.
+    var guess = Number($('input').val()); //This determines whether the guess is the same or if it is higher or lower.
     if (number === guess)
      {
       alert("Excellent Job!")
