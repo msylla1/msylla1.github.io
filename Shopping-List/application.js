@@ -5,4 +5,4 @@ $(#'add').on("click",function(){
 $('#1').append("<p>"+value+"</p>")
   });
 $('#clear').on("click", function(){
-if click
+if 
