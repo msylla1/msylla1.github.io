@@ -1,8 +1,9 @@
 $(document).ready(function(){
-$(#'add').on("click",function(){
-  $('input'). val();
+$('#add').on("click",function(){
   var value=$('input').val()
 $('#1').append("<p>"+value+"</p>")
   });
 $('#clear').on("click", function(){
-if 
+  $('#1').empty();
+});
+});
