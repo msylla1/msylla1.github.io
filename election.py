@@ -1,7 +1,7 @@
 from random import randint
 
 wins=0
-for wins in range(10000):
+for i in range(10000):
   regions=0
   if randint(1,100)<= 87:
     regions+=1
