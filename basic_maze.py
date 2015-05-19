@@ -1,1 +1,6 @@
-
+enc_tgt(1,1,107)
+enc_tgt(1,0,12)
+enc_tgt(1,1,80)
+enc_tgt(1,1,53)
+enc_tgt(0,1,27)
+enc_tgt(1,1,107)
