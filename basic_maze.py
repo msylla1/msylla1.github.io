@@ -1,6 +1,12 @@
-enc_tgt(1,1,107)
-enc_tgt(1,0,12)
-enc_tgt(1,1,80)
-enc_tgt(1,1,53)
-enc_tgt(0,1,27)
-enc_tgt(1,1,107)
+for gopigo import
+import time
+import math
+
+set_speed(100)
+
+enc_tgt(1,1,18)
+time.sleep(.1)
+fwd()
+time.sleep(3)
+
+def move_forward(feet):
